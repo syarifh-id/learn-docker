@@ -1,0 +1,64 @@
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$ docker images ls
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$ docker image pull redis
+Using default tag: latest
+latest: Pulling from library/redis
+360eba32fa65: Pull complete
+64b323c8825b: Pull complete
+383536099eae: Pull complete
+e3f0c12dcc8e: Pull complete
+2d2142a35b4d: Pull complete
+b4cada01e6a7: Pull complete
+Digest: sha256:f92a0be0ba8c085e6a5e2d2bea386365443485bcd67ced5ca8ddcdacdd4656d2
+Status: Downloaded newer image for redis:latest
+docker.io/library/redis:latest
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$ docker images ls
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$ docker image ls
+REPOSITORY   TAG       IMAGE ID       CREATED      SIZE
+redis        latest    39ac5829bade   6 days ago   138MB
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$ docker container ls -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$ docker container create --name Redis-1 redis:latest
+2b3f84ad9053a01566a018bced7ac128e0e046191ee310ee05e12fcae02ed125
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$ docker container ls -a
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS    PORTS     NAMES
+2b3f84ad9053   redis:latest   "docker-entrypoint.s…"   8 seconds ago   Created             Redis-1
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$ docker container start Redis-1
+Redis-1
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$ docker container ls -a
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS          PORTS      NAMES
+2b3f84ad9053   redis:latest   "docker-entrypoint.s…"   2 minutes ago   Up 13 seconds   6379/tcp   Redis-1
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$ docker container stop Redis-q
+Error response from daemon: No such container: Redis-q
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$ docker container stop Redis-1
+Redis-1
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$ docker container start Redis-1
+Redis-1
+
+Syarif@Syarifh MINGW64 /c/WINDOWS/system32
+$
