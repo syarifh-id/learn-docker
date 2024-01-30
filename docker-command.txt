@@ -1,0 +1,15 @@
+docker  
+	pull image-name:image version(default newest version)
+	run images-name:image-version 
+	    -p port-binding->port
+	    -d (detach)
+	    --name your-image-name
+	images (to show list local images)
+	ps (to show running container)
+	   -a (all)
+	stop
+	start
+	log
+	    -f container-name (to follow logs)
+	ecex -it(interaktif terminal) container-name 
+							bash
