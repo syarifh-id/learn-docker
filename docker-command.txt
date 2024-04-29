@@ -1,15 +1,12 @@
-docker  
-	pull image-name:image version(default newest version)
-	run images-name:image-version 
-	    -p port-binding->port
-	    -d (detach)
-	    --name your-image-name
-	images (to show list local images)
-	ps (to show running container)
-	   -a (all)
-	stop
-	start
-	log
-	    -f container-name (to follow logs)
-	ecex -it(interaktif terminal) container-name 
-							bash
+docker run -it ubuntu:22.04 sh
+
+docker pr
+docker ps -a
+
+docker container stop name-or-id
+docker stop name-or-id
+
+docker container start name-or-id
+docker start name-or-id
+
+docker exec -it name-or-id sh
