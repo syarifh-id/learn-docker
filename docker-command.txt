@@ -1,9 +1,9 @@
 docker pull images_name:images_tag
 docker images
 
-docker run -it --name name_container name_image
-docker run -it name_image (a random name will be generated)
-(-it to provide an interactive terminal tty)
+docker run  --name name_container name_image
+docker run name_image (a random name will be generated)
+(add -it to provide an interactive terminal tty)
 
 docker ps (to show running container only)
 docker ps -a  (to show all containers)
@@ -12,11 +12,9 @@ docker start name-or-id
 docker container start name-or-id
 docker stop name-or-id
 docker container stop name-or-id
+docker restart name-or-id
+docker container restart name-or-id
 
-docker exec -it name-or-id command
+docker exec name-or-id command
+(add -it to provide an interactive terminal tty)
 
-
-
-
-
-docker run -p hostPort:containerPort 
