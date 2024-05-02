@@ -1,12 +1,22 @@
-docker run -it ubuntu:22.04 sh
+docker pull images_name:images_tag
+docker images
 
-docker pr
-docker ps -a
+docker run -it --name name_container name_image
+docker run -it name_image (a random name will be generated)
+(-it to provide an interactive terminal tty)
 
-docker container stop name-or-id
-docker stop name-or-id
+docker ps (to show running container only)
+docker ps -a  (to show all containers)
 
-docker container start name-or-id
 docker start name-or-id
+docker container start name-or-id
+docker stop name-or-id
+docker container stop name-or-id
 
-docker exec -it name-or-id sh
+docker exec -it name-or-id command
+
+
+
+
+
+docker run -p hostPort:containerPort 
