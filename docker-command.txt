@@ -17,4 +17,3 @@ docker container restart name-or-id
 
 docker exec name-or-id command
 (add -it to provide an interactive terminal tty)
-
