@@ -1,5 +1,6 @@
 docker pull images_name:images_tag
 docker images
+docker rmi <image_id>
 
 docker run  --name name_container name_image
 docker run name_image (a random name will be generated)
@@ -17,3 +18,6 @@ docker container restart name-or-id
 
 docker exec name-or-id command
 (add -it to provide an interactive terminal tty)
+
+docker rm name_container
+docker rename old_name new_name
