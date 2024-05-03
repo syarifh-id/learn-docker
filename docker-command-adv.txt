@@ -1,0 +1,8 @@
+docker run
+            -d
+            -a
+            -it
+            --name
+            -p port_host:port_container
+
+docker network

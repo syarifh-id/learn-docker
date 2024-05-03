@@ -21,3 +21,6 @@ docker exec name-or-id command
 
 docker rm name_container
 docker rename old_name new_name
+
+
+docker logs name_or_id_container
