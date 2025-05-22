@@ -1,7 +1,0 @@
-cara untuk mempackage deploy dan distribusi secara konsisiten 
-
-container :
-tumpukan dari layer layer Images
-
-
-images :pakckage yang menjadi blueprint untuk container
